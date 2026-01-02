@@ -13,34 +13,29 @@ import java.awt.event.*; - this package handles user actions(events). it provide
 import javax.swing.*; - Swing is java's modern GUI library. It provides Advanced gui components like JFrame , JButton, JLabel, JTextField, JPanel, JOptionPane, JCheckBox 
 
 <br>
-JFrame is used to make the frame pop up in the screen. 
-1. frame.setvisible is to make the frame visible
-2. frame.setSize(width,height) is for the size of the frame 
-3. frame.setLocatiomRelativeTo(null); this is for the frame to come in the middle like not at the side or anything like that. 
-4. frame.setresizable(false) - made so that we cannot resize the file since it will mess with the placing 
-5. frame.setDefaultCloseOperation(jframe)
+
 
 public class TicTacToe 
-   int broadwidth = 600 - this is the width of the frame to be created
-   int broadheight = 650 - 50px is where we will write about the file name. 
-   JFrame frame = new JFrame();- the class JFrame is already in the package javax swing this is used to create the frame. (create window). 
-   JLabel textlabel = new JLabel(); - this is for the text
-   JPanel textpanel = new JPanel(); - this is the container
+   int broadwidth = 600 - this is the width of the frame to be created      <br>
+   int broadheight = 650 - 50px is where we will write about the file name. <br>
+   JFrame frame = new JFrame();- the class JFrame is already in the package javax swing this is used to create the frame. (create window). <br>
+   JLabel textlabel = new JLabel(); - this is for the text <br>
+   JPanel textpanel = new JPanel(); - this is the container <br>
 
    TicTacToe() {
-      frame.setSize(broadwidth, broadheight);   size          
-      frame.setLocationRelativeTo((Component)null); center the frame
-      frame.setResizable(false); to lock the frame
-      frame.setDefaultCloseOperation(3); to exit the frame
-      frame.setLayout(new BorderLayout()); for the boarder
-      textlabel.setBackground(Color.darkGray); background
-      textlabel.setForeground(Color.white); color
-      textlabel.setFont(new Font("Arial", 1, 50)); font 
-      textlabel.setHorizontalAlignment(JLabel.CENTER); alignment like to keep the label at the top
-      textlabel.setText("Tic Tac Toe");
-      textlabel.setOpaque(true); it is for visibility
-      textpanel.setLayout(new BorderLayout()); layout of the panel where the text will be kept 
-      textpanel.add(textlabel); adding the text
-      frame.add (textpanel, "North"); positining in the top
-      frame.setVisible(true); // displaying 
+      frame.setSize(broadwidth, broadheight);        size                     <br>
+      frame.setLocationRelativeTo((Component)null); center the frame<br>
+      frame.setResizable(false);                     to lock the frame<br>
+      frame.setDefaultCloseOperation(3);             to exit the frame<br>
+      frame.setLayout(new BorderLayout());           for the boarder<br>
+      textlabel.setBackground(Color.darkGray);       background<br>
+      textlabel.setForeground(Color.white);          color<br>
+      textlabel.setFont(new Font("Arial", 1, 50));   font <br>
+      textlabel.setHorizontalAlignment(JLabel.CENTER); alignment like to keep <br>the label at the top
+      textlabel.setText("Tic Tac Toe");<br>
+      textlabel.setOpaque(true); it is for visibility<br>
+      textpanel.setLayout(new BorderLayout()); layout of the panel where the t<br>ext will be kept 
+      textpanel.add(textlabel); adding the text<br>
+      frame.add (textpanel, "North"); positining in the top<br>
+      frame.setVisible(true); // displaying <br>
    } 
